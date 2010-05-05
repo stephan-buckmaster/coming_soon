@@ -14,8 +14,10 @@ Installation:
 
   1. Change HTML <title> tag and "div#content h1#title" according to your site name
   2. Place files on your web server / upload to hosting provider
-  3. Customize as needed
+  3. Customize as needed / change favicon.ico
   4. Remove README (this file)
+  5. Optional: Configure script/backup_db.sh and install a crontab entry to backup the
+     database every ten minutes if needed
 
 Testing:
 
