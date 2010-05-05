@@ -1,0 +1,43 @@
+Purpose:
+
+coming_soon is a simple template for a "coming soon" web page, that allows collecting email addresses for interested visitors / alpha testers.
+
+Use it when you have registered a new domain name, and need a page to show, while you work on the site.
+
+Requirements:
+
+ * Apache
+ * Ruby
+ * sqlite3-ruby gem
+
+Installation:
+
+  1. Change HTML <title> tag and "div#content h1#title" according to your site name
+  2. Place files on your web server / upload to hosting provider
+  3. Customize as needed
+  4. Remove README (this file)
+
+Testing:
+
+ 1. Access front page.
+ 2. Fill in Email / Twitter text field and submit
+ 3. Check database update on server:
+
+      sqlite3 db/notification_emails.sqlite3
+      sqlite> select * from notifications;
+  
+ 4. Check access to db is blocked:
+    If your site is at http://mynewapp.com go to 
+
+        http://mynewapp.com/db 
+        http://mynewapp.com/db/notification_emails.sqlite3
+
+    Should get an error page.
+
+Demo:
+
+http://comingsoon.buckmaster.ca
+
+Author/Contact:
+ 
+stephan@buckmaster.ca
